@@ -1,4 +1,4 @@
-export default function formatDate(date: Date){
+export default function formatDate(date: Date) {
 	const d = new Date(date);
 	let month = `${d.getMonth() + 1}`;
 	let day = `${d.getDate()}`;
@@ -14,7 +14,7 @@ export default function formatDate(date: Date){
 	if (minutes.length < 2) minutes = `0${minutes}`;
 	if (seconds.length < 2) seconds = `0${seconds}`;
 
-	return `${[day, month, year].join('/')} ${[hour, minutes, seconds]
-		.join(':')}`;
-
+	return `${[day, month, year].join('/')} ${[hour, minutes, seconds].join(
+		':'
+	)}`;
 }
